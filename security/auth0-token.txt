@@ -1,0 +1,1 @@
+{"access_token":"<GENERATED-ACCESS-TOKEN>,"scope":"check:request check:create","expires_in":86400,"token_type":"Bearer"}
