@@ -25,10 +25,6 @@ router.use(function timeLog (req, res, next) {
   next()
 });
 
-// auth support
-// var secure = require('./lib/api-auth.js');
-// router.use(secure.jwtCheck);
-
 /************************************************************************/
 
 // shared metadata for this service
@@ -91,7 +87,6 @@ router.get('/list/:id', function(req,res){
 });
 
 // credit check form READ
-//router.get('/form/', secure.jwtCheck, secure.jwtAuthz(['check:request']), function(req,res){
 router.get('/form/', function(req,res){
   var args = {};
   args.request = req;
@@ -108,7 +103,6 @@ router.get('/form/', function(req,res){
 });
 
 // credit check form CREATE
-//router.post('/form/', secure.jwtCheck, secure.jwtAuthz(['check:create']), function(req,res){
 router.post('/form/', function(req,res){
   var args = {};
   args.request = req;
